@@ -15,6 +15,7 @@ body{
 main > section{
     max-width: 1140px;
     margin: 60px auto;
+    background-image: url(../assets/bg.png);
 }
 /* black */
 .primary-blck{
@@ -50,6 +51,12 @@ main > section{
 .primary-btn:hover{
     color: blue;
     cursor: pointer;
+}
+.primary-section-title{
+    font-size: 2.9rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
 }
 
 
@@ -140,6 +147,55 @@ main > section{
     color: rgba(17, 17, 17, 1);
     margin-bottom: 30px;
 }
+/* Curriculum style here */
+.curriculum-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 28px;
+}
+.curriculum-card{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 360px;
+    height: 450px;
+    gap: 30px;
+    padding-top: 30px;
+    /* border: 1px solid  rgba(254, 163, 1, 1) ;  */
+    margin-bottom: 10px;
+    box-shadow: 0 0 28px 0.90px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    
+    fill: rgba(222, 245, 255, 1);
+    fill: context-stroke;
+}
+.curriculum-card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(32, 32, 32, 1);
+}
+.curriculum-description{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 1);
+    padding: 0 20px 30px 20px;
+}
+.curriculum-anchor{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.fill-1{
+    background-color: rgb(238, 245, 247);
+
+}
+.fill-2{
+    background-color: rgba(255, 244, 220, 1);
+}
+.fill-3{
+    background-color: rgba(242, 232, 255, 1);
+}
+
 /* Media query for small device */
 @media screen and (max-width:576px) {
    
@@ -149,7 +205,7 @@ main > section{
     .menu-toggle {
         display: block; /* Show hamburger icon on mobile */
        
-        margin-left: 120px;
+        margin-left: 140px;
     }
 
     .nav-btn, .nav-link {
@@ -166,6 +222,23 @@ main > section{
        text-align: center;
        margin-top: 20px;
        gap: 0px;
+       margin-bottom: 0px;
+      
+    }
+    .primary-section-title{
+        margin-top: 0px;
+    }
+    .curriculum-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      
+      
+        /* margin: 0 auto; */
+    }
+    .curriculum-card{
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 
     
