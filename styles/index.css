@@ -33,6 +33,16 @@ main > section{
 .primary-light-blue{
     color: rgba(93, 88, 239, 1);
 }
+.primary-bg-sky{
+    background-color: rgba(60, 216, 232, 1);
+}
+.primary-bg-green{
+    background-color: rgba(149, 178, 38, 1);
+}
+.primary-bg-blue{
+    background-color: rgba(93, 88, 240, 1);
+}
+
 .btn-bg-clr{
     background-color: rgba(254, 163, 1, 1);
 }
@@ -52,7 +62,30 @@ main > section{
     color: blue;
     cursor: pointer;
 }
+.primary-btn-1{
+    padding: 10px 20px;
+    width: 170px;
+    height: 40px;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 20px;
+    transform: translate(35px, -22px);
+}
+.primary-btn-2{
+    padding: 10px 10px;
+    width: 120px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 0.7rem;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    transform: translate(35px, -22px);
+}
 .primary-section-title{
+    position: relative;
     font-size: 2.9rem;
     font-weight: bold;
     color: rgba(0, 0, 0, 1);
@@ -195,6 +228,52 @@ main > section{
 .fill-3{
     background-color: rgba(242, 232, 255, 1);
 }
+.circle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap:10px;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(254, 163, 1, 1);
+    border-radius: 50%;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+/* Story styles start */
+.story-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    
+}
+
+.story-img-containers-1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.story-img{
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+.story-description{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.story-container-title{
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-size: 1rem;
+    padding-left: 30px;
+}
+
 
 /* Media query for small device */
 @media screen and (max-width:576px) {
@@ -208,7 +287,7 @@ main > section{
         margin-left: 140px;
     }
 
-    .nav-btn, .nav-link {
+    .nav-btn, .nav-link, .story-img-containers {
         display: none; /* Hide the contact button for mobile */
     }
     
@@ -222,8 +301,7 @@ main > section{
        text-align: center;
        margin-top: 20px;
        gap: 0px;
-       margin-bottom: 0px;
-      
+       margin-bottom: 0px;   
     }
     .primary-section-title{
         margin-top: 0px;
@@ -239,6 +317,20 @@ main > section{
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+    }
+    .circle-container{
+        display: none;
+    }
+    .story{
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .primary-btn-1, .primary-btn-2{
+        transform: translate(10px, -22px);
+        width: 75%;
+        padding: 5px 5px;
     }
 
     
