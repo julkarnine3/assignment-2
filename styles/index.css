@@ -247,11 +247,21 @@ main > section{
     
 }
 /* Story styles start */
+.story{
+    background-color: rgba(255, 244, 220, 1);
+    border-radius: 20px;
+    max-width: 1440px;
+    padding: 0 80px 60px 80px;
+}
 .story-container{
     display: flex;
     justify-content: space-between;
     gap: 18px;
     
+}
+.story-img-containers{
+    background-color: white;
+    border-radius: 10px;
 }
 
 .story-img-containers-1{
@@ -259,19 +269,44 @@ main > section{
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
 }
+.story-imgs{
+    background-color: white;
+    border-radius: 10px;
+}
 .story-img{
     width: 100%;
     border-radius: 10px 10px 0 0 ;
+   
 }
 .story-description{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .story-container-title{
     color: rgba(0, 0, 0, 1);
     font-weight: bold;
     font-size: 1rem;
-    padding-left: 30px;
+    padding-left: 20px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 60px;
+    
+}
+ .story-btn{  
+    padding: 10px 50px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.story-btn:hover{
+    color: blueviolet;
 }
 
 
@@ -326,6 +361,7 @@ main > section{
         justify-items: center;
         align-items: center;
         margin: 0 auto;
+        padding: 0 20px 60px 20px;
     }
     .primary-btn-1, .primary-btn-2{
         transform: translate(10px, -22px);
