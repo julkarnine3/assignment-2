@@ -252,6 +252,7 @@ main > section{
     border-radius: 20px;
     max-width: 1440px;
     padding: 0 80px 60px 80px;
+    margin-bottom: 0;
 }
 .story-container{
     display: flex;
@@ -308,6 +309,70 @@ main > section{
 .story-btn:hover{
     color: blueviolet;
 }
+/* Footer styles */
+.footer{
+    background-color: rgba(1, 172, 253, 1);
+}
+
+.footer-container{
+    display: flex;
+    padding: 100px 150px 100px 140px;
+    justify-content: space-between;
+    gap: 100px;
+}
+.footer-div{
+    max-width: 350px;
+    border: 2px solid white;
+}
+.footer-logo-img{
+    display: flex;
+    
+    gap:0px;
+}
+.footer-logo-img > img{
+    max-width: 100px;
+    height: 110px;
+}
+.footer-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+.footer-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 20px;
+    padding-right: 10px;
+
+}
+.footer-nav-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 30px;
+}
+.footer-div ul li{
+    list-style: none;
+    padding: 0px;
+}
+.footer-div ul li a{
+    text-decoration: none; 
+    color: rgba(255, 255, 255, 1) ;  
+}
+.footer-nav-link > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.footer-logo-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
 
 
 /* Media query for small device */
@@ -339,9 +404,9 @@ main > section{
        margin-bottom: 0px;   
     }
     .primary-section-title{
-        margin-top: 0px;
+        margin-top: 20px;
     }
-    .curriculum-container{
+    .curriculum-container,.footer-container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
       
@@ -367,6 +432,18 @@ main > section{
         transform: translate(10px, -22px);
         width: 75%;
         padding: 5px 5px;
+    }
+    .footer-container{
+        padding-left: 20px;
+        gap: 10px;
+        padding-top: 20px;
+    }
+    .footer-div{
+        padding-left: 10px;
+        margin-left: 0px;
+    }
+    .footer-nav-title{
+        padding-left: 5px;
     }
 
     
